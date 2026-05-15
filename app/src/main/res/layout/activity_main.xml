@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/etName"
+            android:hint="Enter Name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPersonName"/>
+
+        <!-- Phone -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:hint="Enter Phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="phone"/>
+
+        <!-- Skill -->
+        <EditText
+            android:id="@+id/etSkill"
+            android:hint="Enter Skill (Painter, Plumber)"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="text"/>
+
+        <!-- Rate -->
+        <EditText
+            android:id="@+id/etRate"
+            android:hint="Daily Rate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="number"/>
+
+        <!-- Availability Switch -->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Today"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Save Worker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
